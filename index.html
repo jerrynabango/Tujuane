@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Branch, Merge, and Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Git Branch, Merge, and Checkout</h1>
+    <h2>Git Branch</h2>
+    <p>In Git, a branch is a lightweight movable pointer to one of the commits in the repository's history. It allows you to work on different features or versions of your project without affecting the main codebase.</p>
+    <p>To create a new branch, use the <code>git branch</code> command followed by the branch name:</p>
+    <pre><code>git branch <em>branch-name</em></code></pre>
+    <h2>Git Merge</h2>
+    <p>Git merge is used to combine changes from one branch into another. It integrates the changes made in the source branch with the target branch.</p>
+    <p>To merge a branch into another branch, switch to the target branch and use the <code>git merge</code> command followed by the name of the source branch:</p>
+    <pre><code>git checkout <em>target-branch</em>
+git merge <em>source-branch</em></code></pre>
+    <h2>Git Checkout</h2>
+    <p>Git checkout is used to switch between different branches or to restore files to their previous state. It updates the working directory and the index to reflect the specified branch or commit.</p>
+    <p>To switch to a different branch, use the <code>git checkout</code> command followed by the name of the branch:</p>
+    <pre><code>git checkout <em>branch-name</em></code></pre>
+</body>
+</html>
